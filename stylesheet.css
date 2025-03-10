@@ -1,12 +1,14 @@
 .grid-container {
     display: inline-grid;
-    grid-template-columns: 10rem 50% 1fr 1fr 1fr;
-    width: 25rem;
+    grid-template-rows: minmax(100px, auto);
+    grid-template-columns: minmax(auto, 50%) 1fr 3em minmax(auto, 25%);
     background-color: blue;
+    width: 25rem;
 
     div {
         text-align: center;
         background-color: aqua;
         border: 1px solid;
+        line-break: anywhere;
     }
 }
