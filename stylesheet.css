@@ -1,0 +1,6 @@
+.grid-container {
+    display: inline-grid;
+    justify-content: center;
+    width: 50rem;
+    background-color: aqua;
+}
