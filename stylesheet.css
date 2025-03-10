@@ -1,6 +1,12 @@
 .grid-container {
     display: inline-grid;
-    justify-content: center;
-    width: 50rem;
-    background-color: aqua;
+    grid-template-columns: 10rem 50% 1fr 1fr 1fr;
+    width: 25rem;
+    background-color: blue;
+
+    div {
+        text-align: center;
+        background-color: aqua;
+        border: 1px solid;
+    }
 }
