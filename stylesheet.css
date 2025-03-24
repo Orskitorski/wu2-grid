@@ -4,38 +4,20 @@ body {
 }
 
 .grid-container {
+    background-color: aqua;
     display: inline-grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "content content"
-    "content content";
-    grid-gap: 0.2rem;
-    width: 80vw;
-    height: 90vh;
+    width: 500px;
+    height: 500px;
+    grid-template-columns: repeat(4, 45px);
+    grid-template-rows: repeat(4, 45px);
+    grid-gap: 0.5em;
+    justify-content: space-evenly;
+    align-content: space-evenly;
     font-family: sans-serif;
     font-size: 1.2rem;
     color: white;
 
     div {
         background-color: blue;
-    }
-
-    .item {
-        grid-area: content;
-        border-radius: 5px;
-        display: grid;
-        place-items: center;
-    }
-
-    .item1 { 
-        justify-self: start;
-    }
-    .item2 { 
-        justify-self: center;
-        align-self: center;
-    }
-    .item3 { 
-        justify-self: end;
     }
 }
