@@ -5,14 +5,13 @@ body {
 
 .grid-container {
     display: inline-grid;
-    grid-template-areas:    
+    grid-template-areas: 
     "header header header"
     "header header header"
     "content content sidebar"
     "footer footer footer";
     grid-template-rows: repeat(4, [row-start] 1fr [row-end]);
     grid-template-columns: repeat(3, [col-start] 1fr [col-end]);
-    grid-auto-flow: column;
     grid-auto-columns: 1fr;
     grid-gap: 0.2rem;
     width: 80vw;
@@ -22,7 +21,7 @@ body {
     color: white;
 
     div {
-        background-color: rgb(68, 0, 82);
+        background-color: blue;
     }
 
     .item {
@@ -31,21 +30,25 @@ body {
         place-items: center;
     }
 
-    .item1 {
-
-        grid-area: header-start / content-start / content-start / sidebar-end;
-        background-color: green;
-    }
-    .item2 {
-        grid-area: content;
+    .item1{
+        grid-area: header;
         background-color: red;
     }
-    .item3 {
+    .item2{
+        grid-area: content;
+        background-color: green;
+    }
+    .item3{
         grid-area: sidebar;
         background-color: yellow;
     }
-    .item4 {
+    .item4{
         grid-area: footer;
         background-color: blue;
+    }
+    .item5{
+        grid-area: header-start / header-start / content-end / content-end;
+        background-color: blueviolet;
+        z-index: 1;
     }
 }
